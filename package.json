@@ -1,0 +1,14 @@
+{
+  "name": "sw-test",
+  "version": "1.0.0",
+  "description": "1. Service Workder 只能运行在`HTTPS`和`localhost`环境里。",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server . -o"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}

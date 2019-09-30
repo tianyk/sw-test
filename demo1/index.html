@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+	<img src="https://itextbook-dev-1252350207.cos.ap-beijing.myqcloud.com/img_scene_loading-error%402x.png"
+	alt="load error" srcset="" width="100">
+	
+	<img src="https://itextbook-dev-1252350207.cos.ap-beijing.myqcloud.com/WX20190919-161644%402x.png" alt="xx" width="100">
+		
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/demo1/sw.js', { scope: '/demo1/' }).then(function (reg) {
+				// registration worked
+				console.log('Registration succeeded. Scope is ' + reg.scope);
+			}).catch(function (error) {
+				// registration failed
+				console.log('Registration failed with ' + error);
+			});
+		}
+	</script>
+</body>
+
+</html>
